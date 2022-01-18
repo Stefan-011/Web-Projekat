@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap');
+
+
+:root{
+    --Main-color :#5a297c;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin:  0;    
+}
+
+body{
+    font-family:'Lexend Deca', sans-serif;
+    font-weight: normal;
+    color : #333;
+    line-height: 1.6;
+    flex-direction: row;
+}
+.body_div
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    background: rgb(139,74,184);
+    background: linear-gradient(90deg, #8b4ab8 0%, #643685 44%, #371a4d 100%);
+}
+
+select, input,.\401{
+    font-weight: 500;
+    font-family: 'Libre Franklin', sans-serif;
+    background: rgba(0,0,0,1);
+    color: aliceblue;
+    border-radius: 4px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+
+.logo_div
+{
+    font-size:  50px;
+    max-width: 60%;
+}
+
+.logo_img
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: scale-down;
+}
+
+.info_div
+{
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    color: ivory;
+    font-size:  18px;
+    max-width: 45%;
+}
+
+.navbar
+{
+    background: rgb(139,74,184);
+    background: linear-gradient(90deg, rgba(139,74,184,1) 0%, rgba(100,54,133,1) 44%, rgba(55,26,77,1) 100%);
+    display: flex;
+    padding: 0px 10px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content:stretch ;
+    column-gap: 100px;
+    row-gap: 20px;
+    height: 550px;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.workspace
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5%;
+}
+
+.button_div
+{
+    display: flex;
+    justify-content: center;  
+}
+
+button
+{
+    font-family:'Montserrat', sans-serif;
+    font-weight:600;
+    outline: black 2px solid;
+    border-radius: 200px;
+    align-items: center;
+    border:none;
+    font-size: 14px;
+}
+
+button:hover
+{
+    background-color:lightseagreen;
+    outline: black 3px solid;
+}
+
+.splitted
+{
+    background-color: black;
+    color: ivory;
+    flex-direction: column;
+    margin-left: 3px;
+    flex-basis: 30%;
+    outline: 3px solid black;
+    max-height: fit-content;
+}
+.TeamInfoForm 
+{
+    flex-direction: column;
+    flex-basis:50%;
+    max-width: 100%;
+    background-image:url("assets/InfoLogo.png");
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position-y:  100%;
+    background-position-x:  45%;
+}
+.CRUD_Form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-shrink: 1;
+    max-width: 20%;
+}
+.ModifyForm 
+{
+    display: flex;
+    flex-basis: 30%;
+    flex-shrink: 1;
+    max-width: 100%;
+}
+
+.SubmitBtn
+{
+    margin: 20px 0;
+    width: 50%;
+    margin-left: 20%;
+    background: rgba(139,74,184,0.9);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.InfoTeam
+{
+    font-weight: 400;
+    flex-direction: column;
+    display: flex;
+    flex-shrink: 0;
+    font-size:20px;
+    flex-shrink: 1;
+}
+.TeamVisual_Div
+{
+    margin-top: 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: left;
+    max-height: 100%;
+    margin-bottom: 30%;
+}
+
+.IgracDiv
+{
+   height: 100%;
+   width: 100%;
+   margin: 10px 35%;
+   outline: lightseagreen 2px solid ;
+   text-align: center;
+   font-family:'Lexend Deca', sans-serif;
+   font-weight: 600;
+}
+
+.IgracImage
+{
+    height: 40%;
+    width: 40%;
+}
+
+.ModifyForm,.CRUD_Form,.TeamInfoForm
+{
+    background-color: rgba(0,0,0,0.8);
+}
+
+tr,th,td
+{
+    outline: lightseagreen 1px solid;
+    padding: 0 10px;
+}
+.PlayerTable
+{
+    padding: 5px 5px;   
+}
+
+.tr, td:hover, .IgracDiv:hover
+{
+    color: lightseagreen;
+}
+
+.labelCRUD_ADD
+{
+    background-color: rgba(69, 129, 54,);
+}
+
+
+    @media screen and (max-width: 280px) {
+        p{
+            font-size: 15px;
+        }
+    
+    }
+    @media screen and (max-width: 250px) {
+        p{
+            font-size: 13px;
+        } 
+    }
+    @media screen and (max-width: 220px) {
+        p
+        {
+            font-size: 12px;
+        }
+       
+    }
+    @media screen and (max-width: 200px) {
+        p ,label
+        {
+            font-size: 10px;
+        }
+        
+        .navbar
+        {
+            min-width: 200px;
+        }
+    
+    } 
+    
+    @media screen and (max-width: 660px) 
+    {
+        label,button,input,select,.IgracDiv,.labelCRUD  , .PlayerTable
+        {
+            font-size: 14px;
+        }     
+    }
+    @media screen and (max-width: 530px) 
+    {
+        label,button,input,select,.labelCRUD
+        {
+            font-size: 10px;
+        }     
+        .PlayerTable
+        {
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width: 470px) 
+    {
+        label,button,input,select,.IgracDiv,.labelCRUD
+        {
+            font-size: 7px;
+        }  
+        .PlayerTable
+        {
+            font-size: 11px;
+        } 
+    }
+    @media screen and (max-width: 395px) 
+    {
+        label,button,input,select,.IgracDiv,.labelCRUD
+        {
+            font-size: 5px;
+        }   
+        .PlayerTable
+        {
+            font-size: 10px;
+        } 
+    }
+    @media screen and (max-width: 550px) 
+    {
+        .PlayerTable
+        {
+            font-size: 10px;
+        }   
+    }
+
+    @media screen and (max-width: 420px) 
+    {
+        .PlayerTable
+        {
+            font-size: 6px;
+        }   
+    }
+    @media screen and (max-width: 360px) 
+    {
+        .PlayerTable
+        {
+            font-size: 5px;
+        }   
+    }
+
+    @media screen and (max-width: 320) 
+    {
+        label,button,input,select,.IgracDiv
+        {
+            font-size: 2px;
+        }   
+    }
+
+    @media screen and (max-width: 320px) 
+    {
+        .PlayerTable
+        {
+            font-size: 4px;
+        }   
+    }
+
+    @media screen and (max-width: 280px) 
+    {
+        .PlayerTable
+        {
+            font-size: 3px;
+        }   
+    }
